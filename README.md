@@ -6,12 +6,13 @@ Okey ...<br>
 So, Will be needed first AnimationController with SingleTickerProvider<br>
 for start and reverse ScaleAnimation<br><br>
 
-AnimationController? _animationController;<br>
-AnimationController _animationController = AnimationController(<br>
-  vsync: this,<br>
-  duration: Duration(milliseconds: 100),<br>
-);<br><br>
-
+```
+_AnimationController? _animationController;
+AnimationController _animationController = AnimationController(
+  vsync: this,
+  duration: Duration(milliseconds: 100),
+);
+```
 and we add via Tween an AnimationController to the ScaleTransition<br><br>
 
 ScaleTransition(<br>
